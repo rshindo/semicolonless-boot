@@ -6,7 +6,7 @@ public class SemicolonlessBootApplication {
 
 	public static void main(String[] args) {
 		if(java.util.stream.IntStream
-				.range(0, 1)
+				.of(0)
 				.peek(i -> org.springframework.boot.SpringApplication.run(SemicolonlessBootApplication.class, args))
 				.count() == 0) {}
 	}
